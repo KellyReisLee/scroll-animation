@@ -1,0 +1,102 @@
+/* Always start with this */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Heebo", sans-serif;
+  color: white;
+}
+.landing {
+  /* This put the image in the whole viewport. */
+  min-height: 100vh;
+  background: url("./ocean.jpeg");
+  background-size: cover;
+  padding: 0rem 5rem;
+}
+
+/* Organizing all elements inside navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  padding-left: 5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#logo {
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  font-size: 2.6rem;
+}
+.big-text {
+  position: absolute;
+  font-family: "Lobster", cursive;
+
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  font-size: 5rem;
+}
+
+/* Css for the animation part */
+/* intro is the container that comes after the main container */
+
+.intro {
+  background: rgb(171, 70, 11);
+  /* Positioned as a fixed element on the top of the page. */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Stretch for the whole page. */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Positioning the text in the center: */
+.intro-text {
+  color: white;
+  font-family: "Heebo", sans-serif;
+  font-size: 3rem;
+}
+
+/* Div slider */
+
+.slider {
+  background: rgb(146, 140, 146);
+  /* Positioned as a fixed element on the top of the page. */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Stretch for the whole page. */
+  width: 100%;
+  height: 100%;
+  /* This move it all the way down. */
+  transform: translateY(100%);
+}
+/* Setting the h1 that contains text below the main container */
+
+.hide {
+  background-color: rgb(171, 70, 11);
+  /* Hidden text behind the color: */
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}

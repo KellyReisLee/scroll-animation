@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Website</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&family=Open+Sans:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- // Creating the navbar. -->
+    <main>
+      <section class="landing">
+        <!-- Navbar -->
+        <nav class="">
+          <h1 id="logo">Logo</h1>
+          <ul class="nav-links">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+          </ul>
+        </nav>
+
+        <h2 class="big-text">Stay Strong</h2>
+      </section>
+    </main>
+    <!-- Container for text -->
+    <div class="intro">
+      <div class="intro-text">
+        <!-- Part 1 -->
+        <!-- hide is the class for each h1 that contains text below the main container. -->
+        <h1 class="hide">
+          <span class="text">Creating inovation</span>
+        </h1>
+
+        <!-- part 2 -->
+        <h1 class="hide">
+          <span class="text">For Everyday</span>
+        </h1>
+
+        <!-- Part 3 -->
+        <h1 class="hide">
+          <span class="text">People</span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider"></div>
+
+    <!-- Insert the GSAP(javasrcipt library - using CDN) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Js script -->
+    <script src="app.js"></script>
+  </body>
+</html>
